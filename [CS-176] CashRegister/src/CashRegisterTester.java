@@ -14,7 +14,9 @@ public class CashRegisterTester {
 		
 		//input prices
 		do {
-			customer1.recordPurchase(price);
+			if (price!=0) {
+				customer1.recordPurchase(price);
+			}
 			System.out.print("Enter a purchase amount or -1 to stop: ");
 			price = scan.nextDouble();
 			scan.nextLine();
